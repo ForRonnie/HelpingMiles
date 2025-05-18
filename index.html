@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles: Extraordinary in Every Way</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        .hero img {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+        }
+        
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        
+        .donation-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .donation-card {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .donation-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .donation-card h3 {
+            color: #444;
+            margin-top: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #6b5b95;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #574a7a;
+        }
+        
+        .rainbow-border {
+            border: 5px solid transparent;
+            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border-image-slice: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            background-color: #333;
+            color: white;
+        }
+        
+        footer a {
+            color: #d9d9d9;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-text p {
+                font-size: 1rem;
+            }
+            
+            .donation-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="miles-painting.jpg" alt="Beautiful portrait painting of Miles">
+            <div class="hero-text">
+                <h1>Miles: Extraordinary in Every Way</h1>
+                <p>A unique soul waiting for an extraordinary hero this Pride Month</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Meet Miles</h2>
+            <p>Miles is truly one-of-a-kind - a testament to nature's beautiful diversity. Born with a rare intersex condition, he embodies the spectrum of life that exists beyond simple categories. His amber coat and soulful eyes tell a story of survival and resilience.</p>
+            
+            <p>Found in a remote wilderness area, Miles likely survived on his own for nearly a year before coming to the shelter - a remarkable display of intelligence and determination. Due to his limited early socialization with humans, he's extremely shy and will need a patient, understanding adopter willing to work at his pace.</p>
+            
+            <p>He's made slow but steady progress at our shelter, gradually learning to trust and eat in the presence of humans. At about 40 pounds, he's the perfect medium size - substantial but manageable in most living situations.</p>
+            
+            <div class="gallery">
+                <img src="miles-photo1.jpg" alt="Miles full body photo" class="rainbow-border">
+                <img src="miles-photo2.jpg" alt="Miles close-up photo" class="rainbow-border">
+                <img src="miles-photo3.jpg" alt="Miles making progress photo" class="rainbow-border">
+                <!-- Add a 4th photo if available -->
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Pride Month: Celebrating Uniqueness</h2>
+            <p>This Pride Month, we're celebrating Miles as a beautiful reminder that diversity exists naturally in all species. Just as Pride celebrates authenticity and the beauty of existing beyond traditional categories, Miles represents the wonderful spectrum that exists in nature.</p>
+            
+            <p>Only a very small percentage of mammals are born with intersex conditions, making Miles truly exceptional from a biological perspective. We're looking for an adopter who doesn't just accept Miles' uniqueness, but celebrates it.</p>
+            
+            <p>His journey to becoming a confident companion will take time, but for the right person willing to champion his cause, the reward of earning his trust will be immeasurable.</p>
+        </div>
+        
+        <div class="section">
+            <h2>How You Can Help</h2>
+            <p>We're looking for an experienced dog owner with a quiet home and the patience to let Miles bloom in his own time. Could you be the hero this exceptional survivor has been waiting for?</p>
+            
+            <div class="donation-options">
+                <div class="donation-card">
+                    <h3>Donate $100 or More</h3>
+                    <p>Receive a high-quality 10x8 print of Miles' beautiful portrait, created by local artist to help him find his forever home.</p>
+                    <p>Limited edition, signed prints available while supplies last.</p>
+                    <a href="#" class="btn">Make a Donation</a>
+                </div>
+                
+                <div class="donation-card">
+                    <h3>Adopt Miles</h3>
+                    <p>Give Miles the forever home he deserves and receive the original 10x8 portrait painting with a certificate of authenticity.</p>
+                    <p>Be the extraordinary person who gives this unique dog a chance to thrive.</p>
+                    <a href="#" class="btn">Apply to Adopt</a>
+                </div>
+            </div>
+            
+            <p>All proceeds support the Fulton County Animal Center's rescue efforts, helping more animals like Miles find their forever homes.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Commission a Portrait, Save a Life</h2>
+            <p>Transform your beloved pet's photo into a timeless work of art while helping save lives like Miles. All proceeds from pet portrait commissions directly support the Fulton County Animal Center's rescue efforts.</p>
+            
+            <div class="donation-card" style="margin: 2rem auto; max-width: 600px;">
+                <h3>Custom Pet Portraits</h3>
+                <p>Available in various sizes and styles, each portrait is carefully crafted to capture your pet's unique personality and spirit.</p>
+                <p>Starting at $150 for a custom portrait similar to Miles' painting shown above.</p>
+                <p>The perfect gift for a fellow pet lover or a beautiful memorial for a beloved companion.</p>
+                <a href="mailto:losgarabatosdefer@gmail.com" class="btn">Request a Commission</a>
+            </div>
+            
+            <p>View examples of previous portrait work: <a href="https://photos.app.goo.gl/jiq2LHm5sANH4F146" target="_blank">Portfolio Gallery</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Miles is currently at the <a href="http://www.fultoncoanimalcenter.org" target="_blank">Fulton County Animal Center</a></p>
+        <p>For pet portrait commissions: <a href="mailto:losgarabatosdefer@gmail.com">losgarabatosdefer@gmail.com</a> | Instagram: <a href="https://www.instagram.com/los_garabatos_de_fer/">@los_garabatos_de_fer</a></p>
+        <p>View full portfolio: <a href="https://photos.app.goo.gl/jiq2LHm5sANH4F146">Previous Portrait Work</a></p>
+    </footer>
+</body>
+</html>
