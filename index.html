@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -196,11 +195,39 @@
                         <img src="reddit-logo.png" alt="Share on Reddit" width="40" height="40" style="display: block; margin: 0 auto;">
                         <p style="margin-top: 5px; font-size: 12px;">Reddit</p>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" style="text-decoration: none;">
+                    <a href="javascript:void(0);" onclick="copyAndOpen('https://forronnie.github.io/HelpingMiles/', 'https://www.tiktok.com/upload', 'tiktok-message');" style="text-decoration: none; position: relative;">
+                        <img src="tiktok-logo.png" alt="Share on TikTok" width="40" height="40" style="display: block; margin: 0 auto;">
+                        <p style="margin-top: 5px; font-size: 12px;">TikTok</p>
+                        <span id="tiktok-message" style="display: none; position: absolute; top: -40px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 5px 10px; border-radius: 4px; font-size: 12px; white-space: nowrap;">Link copied!</span>
+                    </a>
+                    <a href="javascript:void(0);" onclick="copyAndOpen('https://forronnie.github.io/HelpingMiles/', 'https://www.instagram.com/create/story', 'instagram-message');" style="text-decoration: none; position: relative;">
                         <img src="instagram-logo.png" alt="Share on Instagram" width="40" height="40" style="display: block; margin: 0 auto;">
                         <p style="margin-top: 5px; font-size: 12px;">Instagram</p>
+                        <span id="instagram-message" style="display: none; position: absolute; top: -40px; left: 50%; transform: translateX(-50%); background: #333; color: white; padding: 5px 10px; border-radius: 4px; font-size: 12px; white-space: nowrap;">Link copied!</span>
                     </a>
                 </div>
+                
+                <script>
+                function copyAndOpen(textToCopy, urlToOpen, messageId) {
+                    // Copy to clipboard
+                    navigator.clipboard.writeText(textToCopy).then(function() {
+                        // Show message
+                        var message = document.getElementById(messageId);
+                        message.style.display = 'block';
+                        
+                        // Hide message after 1 second
+                        setTimeout(function() {
+                            message.style.display = 'none';
+                            // Open the app in new window
+                            window.open(urlToOpen, '_blank');
+                        }, 500);
+                    }, function(err) {
+                        console.error('Could not copy text: ', err);
+                        // Open the app anyway
+                        window.open(urlToOpen, '_blank');
+                    });
+                }
+                </script>
             </div>
             <!-- END VIDEO SECTION -->
         </div>
@@ -232,6 +259,9 @@
                         </a>
                         <a href="https://www.reddit.com/submit?url=https://forronnie.github.io/HelpingMiles/&title=Miles:%20Extraordinary%20in%20Every%20Way%20-%20A%20unique%20dog%20seeking%20a%20hero%20this%20Pride%20Month" target="_blank">
                             <img src="reddit-logo.png" alt="Share on Reddit" width="30" height="30">
+                        </a>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img src="tiktok-logo.png" alt="Share on TikTok" width="30" height="30">
                         </a>
                         <!-- For Instagram, we'll provide instructions since direct sharing isn't possible -->
                         <span style="position: relative; display: inline-block;">
@@ -293,11 +323,25 @@
         <p>Miles is currently at the <a href="http://www.fultoncoanimalcenter.org" target="_blank">Fulton County Animal Center</a></p>
         <p>For pet portrait commissions: <a href="mailto:losgarabatosdefer@gmail.com">losgarabatosdefer@gmail.com</a> | Instagram: <a href="https://www.instagram.com/los_garabatos_de_fer/">@los_garabatos_de_fer</a></p>
         <p>View full portfolio: <a href="https://photos.app.goo.gl/jiq2LHm5sANH4F146">Previous Portrait Work</a></p>
-        <!-- Invisible visitor counter - no signup required -->
+        <!-- Invisible StatCounter code - click stats link to view results -->
         <div style="display:none;">
-            <a href="https://www.hitwebcounter.com" target="_blank">
-                <img src="https://hitwebcounter.com/counter/counter.php?page=9191064&style=0038&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter" border="0" />
-            </a>
+            <!-- Default Statcounter code for Miles Helping Page
+            https://forronnie.github.io/HelpingMiles/ -->
+            <script type="text/javascript">
+            var sc_project=12932389; 
+            var sc_invisible=1; 
+            var sc_security="94cd28ef"; 
+            </script>
+            <script type="text/javascript"
+            src="https://www.statcounter.com/counter/counter.js"
+            async></script>
+            <noscript><div class="statcounter"><a title="Web Analytics"
+            href="https://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="https://c.statcounter.com/12932389/0/94cd28ef/1/"
+            alt="Web Analytics"
+            referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+            <!-- End of Statcounter Code -->
         </div>
     </footer>
 </body>
